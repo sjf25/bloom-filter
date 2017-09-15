@@ -16,7 +16,7 @@ filter.add("some element")
 filter.add("another")
 
 # returns True if might be in filter, False otherwise
-# note: the bloom filter can return false positive, but not false negatives
+# note: the bloom filter can return false positives, but not false negatives
 filter.maybe_element("some element")
 filter.maybe_element("something")
 ```
