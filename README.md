@@ -23,3 +23,31 @@ filter.maybe_element("something")
 
 ## Uses
 The bloom filter can be used to check if a given password is in a set of breached passwords (can be obtained from <https://haveibeenpwned.com/>).
+
+The following are some example queries applied to the set of passwords:
+```
+?- password
+True
+?- correcthorsebatterystaple
+True
+?- qwertyuiop
+True
+?- sdfghjkl
+True
+?- qwfgfddfgfgfdff
+False
+?- zxokggty
+False
+?- bW9vY293Z29lc21vbw==
+False
+?- anypasswordheretotest
+False
+?- 123456789
+True
+?- 12624120720
+True
+?- 10195748
+False
+?- bloomfiltersarecool
+False
+```
