@@ -24,7 +24,7 @@ filter.maybe_element("something")
 out_file = open('/path/to/some/file/some_file', 'wb')
 filter.write(out_file)
 
-# read in a bloom filter that was save to a file
+# read in a bloom filter that was saved to a file
 in_file = open('/path/to/some/file/other_file', 'rb')
 other_filter = BloomFilter.open(in_file)
 ```
